@@ -1,0 +1,17 @@
+{
+  "name": "vue-platform-cli",
+  "version": "1.0.0",
+  "description": "开发后台脚手架，快速生成标准Vue后台架构",
+  "main": "index.js",
+  "author": "licop",
+  "license": "MIT",
+  "dependencies": {
+    "chalk": "^5.2.0",
+    "commander": "^10.0.0",
+    "download-git-repo": "^3.0.2",
+    "figlet": "^1.5.2",
+    "inquirer": "^9.1.4",
+    "ora": "^6.1.2",
+    "shelljs": "^0.8.5"
+  }
+}
