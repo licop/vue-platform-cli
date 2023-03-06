@@ -8,6 +8,7 @@ let { promisify } = require('util')
 let asyncFiglet = promisify(require('figlet'))
 let chalk = require('chalk')
 const inquirer = require('inquirer')
+let init = require("./init")
 
 // 日志打印函数
 const log = content => {
@@ -40,9 +41,10 @@ program
     ])
     if(answer.language == 'Javascript') {
       // 下载框架
-      console.log("您选择了Javascript版本，即将进入下载模式。")
+      console.log("您选择了Javascript版本,即将进入下载模式。")
+      init(name)
     } else {
-      console.log("Typescript版本施工中，敬请期待")
+      console.log("Typescript版本施工中,敬请期待")
     }
   })
 
